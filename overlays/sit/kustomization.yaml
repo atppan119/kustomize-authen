@@ -7,7 +7,7 @@ resources:
 namespace: atp-training
 
 images:
-- name: asia.gcr.io/poc-innovation-iot/atp-user-consumer
+- name: asia.gcr.io/poc-innovation-iot/atp-admin-authen
   newTag: 348405c8
 
 
@@ -15,10 +15,10 @@ configMapGenerator:
 - behavior: merge
   files:
   - configs/config.yaml
-  name: atp-user-consumer-configmap-file
+  name: atp-admin-authen-configmap-file
 
 secretGenerator:
 - behavior: merge
   envs:
   - secrets/secret.env
-  name: atp-user-consumer-secret-env
+  name: atp-admin-authen-secret-env

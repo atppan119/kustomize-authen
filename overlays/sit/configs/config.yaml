@@ -2,11 +2,11 @@
 environment: sit
 
 app:
-  name: consumer
+  name: authen
 
 server:
   port: 8080
-  timeout: 15
+  timeout: 30s
   
 log:
   environment: production
@@ -17,21 +17,15 @@ postgres:
   db-name: pan-db
   host: 172.28.240.42
   port: 5432
-  pool-size: 30
-
-kafka:
-  address:
-    - kafka.poc.internal:9092
-  topic: 
-    - atp-user-topic
-  consume-group: atp-user-consumer-group
 
 redis:
   address: 172.28.241.3:6379
   database: 1
-  authString: 92008bf3-478e-4aaf-9a41-007423d8bfb6
 
-user-list-key: ATP_USER_LIST
+email-info:
+  email: pangg000.hi3@gmail.com
+  subject: "OTP verification code received"
+
 
   
 

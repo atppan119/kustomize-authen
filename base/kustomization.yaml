@@ -10,11 +10,11 @@ namespace: atp-training
 configMapGenerator:
 
   # can be other file type
-  - name: atp-user-consumer-configmap-file
+  - name: atp-admin-authen-configmap-file
     files:
     - configs/config.yaml
 
 secretGenerator:
-  - name: atp-user-consumer-secret-env
+  - name: atp-admin-authen-secret-env
     envs:
     - secrets/secret.env

@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: atp-user-consumer
+  name: atp-admin-authen
   labels:
-    app.kubernetes.io/name: atp-user-consumer
-    app.kubernetes.io/instance: atp-user-consumer
+    app.kubernetes.io/name: atp-admin-authen
+    app.kubernetes.io/instance: atp-admin-authen
 spec:
   type: ClusterIP
   ports:
@@ -13,5 +13,5 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/name: atp-user-consumer
-    app.kubernetes.io/instance: atp-user-consumer
+    app.kubernetes.io/name: atp-admin-authen
+    app.kubernetes.io/instance: atp-admin-authen
