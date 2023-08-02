@@ -8,7 +8,7 @@ namespace: atp-training
 
 images:
 - name: asia.gcr.io/poc-innovation-iot/atp-admin-authen
-  newTag: 0b93e72a
+  newTag: 7617d341
 
 
 configMapGenerator:
