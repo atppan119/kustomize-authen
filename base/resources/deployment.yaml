@@ -44,7 +44,8 @@ spec:
               port: http
             timeoutSeconds: 10
             initialDelaySeconds: 10
-          limits:
+          resources:
+            limits:
               cpu: 100m
               memory: 64Mi
             requests:
