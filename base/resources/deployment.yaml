@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/name: atp-admin-authen
     app.kubernetes.io/instance: atp-admin-authen
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app.kubernetes.io/name: atp-admin-authen
