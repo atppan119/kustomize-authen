@@ -45,11 +45,11 @@ spec:
             timeoutSeconds: 10
             initialDelaySeconds: 10
           limits:
-              cpu: 200m
-              memory: 128Mi
+              cpu: 100m
+              memory: 64Mi
             requests:
-              cpu: 200m
-              memory: 128Mi
+              cpu: 100m
+              memory: 64Mi
       volumes:
         - name: atp-admin-authen-secret-file
           secret:
